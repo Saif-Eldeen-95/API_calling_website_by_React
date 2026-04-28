@@ -10,7 +10,7 @@ function About() {
       </p>
 
       <section className="about-section">
-        <h2>What You'll Learn</h2>
+        <h2>What I Have Learned</h2>
         <ul className="about-features">
           <li>Making HTTP requests with Axios</li>
           <li>Managing state with React hooks (useState, useEffect)</li>
@@ -23,9 +23,9 @@ function About() {
         <h2>Tech Stack</h2>
         <div className="tech-tags">
           <span className="tech-tag">React</span>
-          <span className="tech-tag">Vite</span>
-          <span className="tech-tag">Axios</span>
           <span className="tech-tag">React Router</span>
+          <span className="tech-tag">Axios</span>
+          <span className="tech-tag">API</span>
           <span className="tech-tag">CSS Variables</span>
         </div>
       </section>

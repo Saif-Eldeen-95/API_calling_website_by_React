@@ -1,4 +1,3 @@
-
 import {Routes , Route , Link } from 'react-router-dom'
 import './styling/App.css'
 import FetchData from './FetchData'
