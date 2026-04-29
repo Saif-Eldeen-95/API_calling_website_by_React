@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styling/FetchData.css';
 
@@ -11,11 +11,12 @@ function FetchData() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
+    useEffect(() => {
+        fetchData();
+    }, []);
+
     return (
         <div className="fetch-container">
-            <button id="fetch-data-button" onClick={fetchData} className="fetch-btn">
-                Fetch Data
-            </button>
             <div className="posts-list">
                 {data ? data.map(post => (
                     <article key={post.id} className="post-card">
